@@ -761,11 +761,19 @@ Here is a table summarising general recommendations for different library types 
             <td align="center"><g-emoji alias="white_large_square" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2b1c.png" ios-version="6.0">⬜️</g-emoji></td>
         </tr>
         <tr>
-            <td align="left">Zymo    Pico-Methyl</td>
+            <td align="left">Zymo Pico-Methyl</td>
             <td align="center">10 bp</td>
             <td align="center">(10 bp)</td>
             <td align="center"><code>--non_directional</code></td>
             <td align="center"><g-emoji alias="white_check_mark" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png" ios-version="6.0">✅</g-emoji></td>
+            <td align="center"><g-emoji alias="white_large_square" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2b1c.png" ios-version="6.0">⬜️</g-emoji></td>
+        </tr>
+        <tr>
+            <td align="left">NEB EM-seq</td>
+            <td align="center">10 bp</td>
+            <td align="center">(10 bp)</td>
+            <td align="center"><code>--non_directional</code></td>
+            <td align="center"><g-emoji alias="white_check_mark" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png" ios-version="6.0">⬜️</g-emoji></td>
             <td align="center"><g-emoji alias="white_large_square" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2b1c.png" ios-version="6.0">⬜️</g-emoji></td>
         </tr>
     </tbody>
@@ -824,9 +832,11 @@ This Illumina kit (previously known as EpiGnome kit from epicentre) also employs
 ([Manufacturer's page](https://www.zymoresearch.com/epigenetics/dna-methylation/genome-wide-5-mc-analysis/pico-methyl-seq-library-prep-kit))
 The Pico Methyl-Seq kit also uses a random priming step similar to the PBAT // single-cell methods above. This kit uses random tetramers (4N) for the amplification step, however the biases seen in the base composition and M-bias plots indicate that one should trim off at least the first 10 bp from each read. This kit performs three rounds of amplification which yields non-directional libraries (similar to the scBS-Seq protocol), so all four different bisulfite strands (OT, CTOT, OB, CTOB) are present in the library. According to the manufacturer, the library construction is designed for a starting input material of 100 ng, but can be scaled up or down (to 100 pg). Please also see the section _3' Trimming in general_ below.
 
+#### NEB EM-seq (Enzymatic Methylation Sequencing)
+([Manufacturer's page](https://www.neb.com/products/e7120-nebnext-enzymatic-methyl-seq-kit))
 
 #### Swift
-[Manufacturer's page](https://swiftbiosci.com/products/accel-ngs-methyl-seq-dna-library-kit/)
+([Manufacturer's page](https://swiftbiosci.com/products/accel-ngs-methyl-seq-dna-library-kit/))
 The Accel-NGS Methyl-Seq protocol uses Adaptase technology for capturing single-stranded DNA in an unbiased (again, not that unbiased actually...) manner. Also here, the first ~10 bp show extreme biases in sequence composition and M-bias, so trimming off at *least* 10 bp is advisable (please check the M-bias plot if even more is needed). Please also see the section _3' Trimming in general_ below.
 
 
